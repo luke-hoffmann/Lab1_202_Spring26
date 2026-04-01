@@ -1,5 +1,5 @@
 import unittest
-from lab1 import linear_search, Student
+from lab1 import linear_search, merge_sorted_lists, Student
 class TestLab1(unittest.TestCase):
     
     # --- Tests for Task 2: Linear Search ---
