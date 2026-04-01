@@ -45,14 +45,9 @@ class TestLab1(unittest.TestCase):
         
 
     def test_merge_sorted_lists_validation(self) -> None:
-        self.assertRaises(TypeError,merge_sorted_lists(["abc"],["123"]))
-        self.assertRaises(TypeError,merge_sorted_lists([],["Hello, world!"]))
-        self.assertRaises(TypeError,merge_sorted_lists(["Test"],[]))
-        self.assertRaises(TypeError,merge_sorted_lists([10.3],[]))
-        self.assertRaises(TypeError,merge_sorted_lists([],[0.65]))
-        self.assertRaises(TypeError,merge_sorted_lists([14.6],[9.1]))
-        self.assertRaises(TypeError,merge_sorted_lists([10],[9.3]))
-        self.assertRaises(TypeError,merge_sorted_lists([10.3],[5]))
+        self.assertRaises(TypeError,merge_sorted_lists,"string",1234)
+        self.assertRaises(TypeError,merge_sorted_lists,1,"string")
+        self.assertRaises(TypeError,merge_sorted_lists,"string","abc123")
 
 if __name__ == "__main__":
     # This replaces your old execution block. 

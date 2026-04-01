@@ -3,16 +3,16 @@ Lab 1: Python Review
 Core Python programming concepts, code quality, type hints, and validation.
 """
 
-from typing import Any
+from typing import TypeAlias
 from dataclasses import dataclass
 # ==========================================
 # Task 1: Type Aliases
 # ==========================================
 # comment for part 1 here: 
-Average = float
-NameSequence = list[str]
-PopulationCount = int
-StockPriceSequence = list[float]
+Average: TypeAlias = float
+NameSequence: TypeAlias = list[str]
+PopulationCount: TypeAlias = int
+StockPriceSequence: TypeAlias = list[float]
 
 # ==========================================
 # Task 2: Linear Search with Type Checking
