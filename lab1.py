@@ -58,6 +58,12 @@ def merge_sorted_lists(list1: list[int], list2: list[int]) -> list[int]:
 
     # Two-pointer approach to merge
     while i < len(list1) and j < len(list2):
+        # Validation: Ensure all elements are integers
+        if not isinstance(list1[i], int):
+            raise TypeError("Elements in list1 must be integers.")
+        if not isinstance(list2[j], int):
+            raise TypeError("Elements in list2 must be integers.")
+        
         if list1[i] < list2[j]:
             merged.append(list1[i])
             i += 1
